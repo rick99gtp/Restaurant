@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-section {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../images/hero-image.jpg");
+}
+
+nav {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 50px;
+    font-family: 'Bilbo Swash Caps', cursive;
+    padding: 15px 0px;
+    letter-spacing: .15em;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+nav ul li {
+    letter-spacing: 8px;
+    padding: 0px 15px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav .social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .social img {
+    margin: 0px 15px;
+}
