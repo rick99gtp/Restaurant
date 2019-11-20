@@ -86,12 +86,19 @@ section.hero-section .center-hero-text .hero-menu-button {
     text-transform: uppercase;
     padding: 12px 50px;
     font-size: 14px;
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     margin: 50px;
+    font-weight: bold;
+    transition: all .25s ease-in-out;
 }
 
 section.hero-section .center-hero-text a:visited {
     color: white;
+}
+
+section.hero-section .center-hero-text a:hover {
+    background-color: white;
+    color: brown;
 }
 
 section.separator {
@@ -118,13 +125,14 @@ section.separator img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: .25;
+    opacity: .1;
 }
 
 .burger-section {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: #f3f3f3;
+    background-image: url('../images/paper-bg.jpg');
+    background-repeat: repeat;
 }
 
 .burger-section .burger-top {
@@ -140,6 +148,8 @@ section.separator img {
 
 .burger-section .burger-top .rhs-burger {
     width: 50%;
+    margin-top: 35px;
+    margin-bottom: -15px;
 }
 
 .burger-section .burger-top .rhs-burger img:first-child {
@@ -159,24 +169,65 @@ section.separator img {
 }
 
 .burger-section .burger-top .lhs-burger p {
-    line-height: 1.5;
+    line-height: 1.75;
     letter-spacing: 1px;
-}
-
-.burger-section .cook-separator {
-    
 }
 
 .burger-section .cook-separator .cook-left {
     width: 50%;
+    padding-left: 20em;
+    padding-right: 5em;
 }
 
 .burger-section .cook-separator .cook-left h3 {
     text-align: center;
-    padding-left: 20em;
-    padding-right: 5em;
+    font-size: 24px;
 }
 
 .burger-section .cook-separator .cook-right {
     width: 50%;
 }
+
+.burger-section .burger-bottom {
+    display: flex;
+}
+
+.burger-section .burger-bottom .lhs-bottom-burger {
+    width: 50%;
+    padding-left: 20em;
+    padding-right: 5em;
+    margin-top: 50px;
+}
+
+.burger-section .burger-bottom .lhs-bottom-burger .chef-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-section .burger-bottom .lhs-bottom-burger .chef-div p {
+    border-top: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    padding: 15px 25px;
+    margin: 0px 15px;
+    font-size: 24px;
+}
+
+.burger-section .burger-bottom .lhs-bottom-burger .chef-div img {
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+}
+
+.burger-section .burger-bottom .chef-quote i {
+    font-size: 20px;
+}
+
+.burger-section .burger-bottom .rhs-bottom-burger {
+    width: 50%;
+}
+
+.burger-section .burger-bottom .rhs-bottom-burger img:first-child {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
