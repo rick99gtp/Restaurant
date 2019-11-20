@@ -96,12 +96,87 @@ section.hero-section .center-hero-text a:visited {
 
 section.separator {
     position: relative;
+    height: 10px;
+}
+
+section.separator .separator-circle {
+    position: absolute;
     height: 100px;
-    display: flex;
-    justify-content: center;
+    width: 100px;
     border-radius: 50%;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 section.separator img {
-    margin-top: -45px;
+    position: relative;
+    height: 80px;
+    width: 80px;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .25;
+}
+
+.burger-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f3f3f3;
+}
+
+.burger-section .burger-top {
+    display: flex;
+}
+
+.burger-section .burger-top .lhs-burger {
+    width: 50%;
+    text-align: center;
+    padding-left: 20em;
+    padding-right: 5em;
+}
+
+.burger-section .burger-top .rhs-burger {
+    width: 50%;
+}
+
+.burger-section .burger-top .rhs-burger img:first-child {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.burger-section .burger-top .lhs-burger h1 {
+    font-size: 48px;
+}
+
+.burger-section .burger-top .lhs-burger h2 {
+    font-size: 16px;
+    margin-top: 10px;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.burger-section .burger-top .lhs-burger p {
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.burger-section .cook-separator {
+    
+}
+
+.burger-section .cook-separator .cook-left {
+    width: 50%;
+}
+
+.burger-section .cook-separator .cook-left h3 {
+    text-align: center;
+    padding-left: 20em;
+    padding-right: 5em;
+}
+
+.burger-section .cook-separator .cook-right {
+    width: 50%;
 }
