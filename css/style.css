@@ -7,7 +7,6 @@
 section.hero-section {
     position: relative;
     height: 100vh;
-    width: 100vw;
     background-image: url("../images/hero-image.jpg");
     background-repeat: no-repeat;
     background-size:cover;
@@ -166,6 +165,8 @@ section.separator img {
     margin-top: 10px;
     padding-bottom: 50px;
     text-transform: uppercase;
+    color: brown;
+    letter-spacing: 1px;
 }
 
 .burger-section .burger-top .lhs-burger p {
@@ -196,7 +197,7 @@ section.separator img {
     width: 50%;
     padding-left: 20em;
     padding-right: 5em;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 .burger-section .burger-bottom .lhs-bottom-burger .chef-div {
@@ -218,8 +219,31 @@ section.separator img {
     border: 5px solid #ffffff;
 }
 
-.burger-section .burger-bottom .chef-quote i {
-    font-size: 20px;
+.burger-section .burger-bottom .lhs-bottom-burger .chef-quote {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.burger-section .burger-bottom .lhs-bottom-burger .chef-quote i {
+    font-size: 25px;
+    opacity: .25;
+}
+
+.burger-section .burger-bottom .lhs-bottom-burger .chef-quote p {
+    width: 50%;
+    align-self: center;
+    font-size: 36px;
+    font-family: 'Tangerine', cursive;
+    color: brown;
+}
+
+.burger-section .burger-bottom .lhs-bottom-burger .chef-quote i.quote-1 {
+    align-self: flex-start;
+}
+.burger-section .burger-bottom .lhs-bottom-burger .chef-quote i.quote-2 {
+    align-self: flex-end;
 }
 
 .burger-section .burger-bottom .rhs-bottom-burger {
@@ -231,3 +255,47 @@ section.separator img {
     margin-left: 1em;
 }
 
+.tasty-fries {
+    background-image: url("../images/white-table.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tasty-fries .middle-section {
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.tasty-fries .middle-section .fries-right-side-top {
+    background-image: url('../images/barn-bg.jpg');
+    background-size: 543px 511px;
+    background-repeat: no-repeat;
+    width: 543px;
+    height: 511px;
+    padding-left: 10%;
+}
+
+.tasty-fries .middle-section .fries-right-side-top h2 {
+    font-size: 48px;
+    margin-top: 15%;
+}
+
+.tasty-fries .middle-section .fries-right-side-top h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    color: brown;
+}
+
+.tasty-fries .middle-section .fries-right-side-top p {
+    line-height: 1.75;
+    letter-spacing: 1px;
+    margin-top: 13%;
+    margin-right: 10%;
+}
