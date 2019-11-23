@@ -13,7 +13,8 @@ section.hero-section {
     height: 100vh;
     background-image: url("../images/hero-image.jpg");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: 100% 100%;
+    z-index: 50;
 }
 
 section.hero-section header {
@@ -106,6 +107,7 @@ section.hero-section .center-hero-text a:hover {
 section.separator {
     position: relative;
     height: 10px;
+    z-index: 99;
 }
 
 section.separator .separator-circle {
@@ -130,129 +132,12 @@ section.separator img {
     opacity: .1;
 }
 
-.burger-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+section.art-of-the-burger {
+    position: relative;
     background-image: url('../images/paper-bg.jpg');
     background-repeat: repeat;
-}
-
-.burger-section .burger-top {
-    display: flex;
-}
-
-.burger-section .burger-top .lhs-burger {
-    width: 50%;
-    text-align: center;
-    padding-left: 20em;
-    padding-right: 5em;
-}
-
-.burger-section .burger-top .rhs-burger {
-    width: 50%;
-    margin-top: 35px;
-    margin-bottom: -15px;
-}
-
-.burger-section .burger-top .rhs-burger img:first-child {
-    margin-right: 1em;
-    margin-left: 1em;
-}
-
-.burger-section .burger-top .lhs-burger h1 {
-    font-size: 48px;
-}
-
-.burger-section .burger-top .lhs-burger h2 {
-    font-size: 16px;
-    margin-top: 10px;
-    padding-bottom: 50px;
-    text-transform: uppercase;
-    color: brown;
-    letter-spacing: 1px;
-}
-
-.burger-section .burger-top .lhs-burger p {
-    line-height: 1.75;
-    letter-spacing: 1px;
-}
-
-.burger-section .burger-bottom {
-    display: flex;
-}
-
-.burger-section .burger-bottom .lhs-bottom-burger {
-    width: 50%;
-    padding-left: 20em;
-    padding-right: 5em;
-    margin-top: 35px;
-}
-
-.burger-section .burger-bottom .rhs-bottom-burger {
-    width: 50%;
-}
-
-.burger-section .burger-bottom .rhs-bottom-burger img:first-child {
-    margin-right: 1em;
-    margin-left: 1em;
-}
-
-.tasty-fries {
-    position: relative;
-    background-image: url("../images/white-table.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.tasty-fries .middle-section {
-    width: 60vw;
-    height: 70vh;
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 25px;
-}
-
-.tasty-fries .middle-section img {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-.tasty-fries .middle-section .fries-right-side {
-    background-image: url('../images/barn-bg.jpg');
-    background-size: 543px 511px;
-    background-repeat: no-repeat;
-    width: 543px;
-    height: 511px;
-    padding-left: 4%;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-.tasty-fries .middle-section .fries-right-side h2 {
-    font-size: 48px;
-    margin-top: 15%;
-}
-
-.tasty-fries .middle-section .fries-right-side h3 {
-    font-size: 16px;
-    text-transform: uppercase;
-    margin-top: 5px;
-    color: brown;
-}
-
-.tasty-fries .middle-section .fries-right-side p {
-    line-height: 1.75;
-    letter-spacing: 1px;
-    margin-top: 13%;
-    margin-right: 10%;
-}
-
-section.art-of-the-burger {
-    background-image: url('../images/paper-bg.jpg');
-    background-repeat: repeat;   
+    box-shadow: 0 10px 25px rgba(0,0,0,.25);
+    z-index: 10;
 }
 
 section.art-of-the-burger .burger-container {
@@ -371,6 +256,61 @@ section.art-of-the-burger .burger-container .right-side-container .bottom-right-
     grid-column: 2;
 }
 
+section.tasty-fries {
+    position: relative;
+    background-image: url("../images/white-table.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,.25);
+    z-index: 5;
+}
+
+.tasty-fries .middle-section {
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
+.tasty-fries .middle-section img {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.tasty-fries .middle-section .fries-right-side {
+    background-image: url('../images/barn-bg.jpg');
+    background-size: 543px 511px;
+    background-repeat: no-repeat;
+    width: 543px;
+    height: 511px;
+    padding-left: 4%;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.tasty-fries .middle-section .fries-right-side h2 {
+    font-size: 48px;
+    margin-top: 15%;
+}
+
+.tasty-fries .middle-section .fries-right-side h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    color: brown;
+}
+
+.tasty-fries .middle-section .fries-right-side p {
+    line-height: 1.75;
+    letter-spacing: 1px;
+    margin-top: 13%;
+    margin-right: 10%;
+}
+
 .tasty-fries .middle-section .tasty-floating-div {
     display: flex;
     flex-direction: column;
@@ -399,4 +339,74 @@ section.art-of-the-burger .burger-container .right-side-container .bottom-right-
 
 .tasty-fries .middle-section .tasty-floating-div p:nth-child(3) {
     font-size: 24px;
+}
+
+.breakfast {
+    position: relative;
+    background-image: url('../images/breakfast-bg.png');
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+.breakfast .breakfast-inner {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding: 75px 0px;
+}
+
+.breakfast .breakfast-inner .breakfast-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.breakfast .breakfast-inner .breakfast-left,  .breakfast .breakfast-inner .breakfast-right {
+    width: 50%;
+    text-align: center;
+}
+.breakfast .breakfast-inner .breakfast-left header {
+    margin-bottom: 40px;
+}
+
+.breakfast .breakfast-inner .breakfast-left header h1 {
+    color: white;
+    font-size: 64px;
+}
+
+.breakfast .breakfast-inner .breakfast-left header p {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: brown;
+    font-weight: bold;
+}
+
+.breakfast .breakfast-inner .breakfast-left .menu-item {
+    margin-bottom: 40px;    
+}
+
+.breakfast .breakfast-inner .breakfast-left .menu-item h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.breakfast .breakfast-inner .breakfast-left .menu-item p:nth-child(2) {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.breakfast .breakfast-inner .breakfast-left .menu-item p:nth-child(3) {
+    color: rgb(235, 226, 144);
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.breakfast .breakfast-inner .breakfast-right .breakfast-right-inner {
+    width: 55%;
+    margin: 0 auto;
+    background-image: url('../images/paper-bg.jpg');
+    background-repeat: repeat;
+    height: 100%;
 }
