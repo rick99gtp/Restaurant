@@ -87,21 +87,23 @@ section.hero-section .center-hero-text p {
 }
 
 section.hero-section .center-hero-text .hero-menu-button {
-    padding: 12px 50px;
-    font-size: 14px;
-    border: 1px solid #ffffff;
+    padding: 2% 12%;
+    font-size: 20px;
+    border: 2px solid #fff;
     margin: 50px;
     font-weight: bold;
     transition: all .25s ease-in-out;
+    background-color: rgba(0,0,0,.2);
+    letter-spacing: 2px;
 }
 
-section.hero-section .center-hero-text a:visited {
+a:visited {
     color: white;
 }
 
 section.hero-section .center-hero-text a:hover {
     background-color: white;
-    color: brown;
+    color: #a47d5e;
 }
 
 section.separator {
@@ -178,7 +180,7 @@ section.art-of-the-burger .burger-container .left-side-container .inner-left-sid
 section.art-of-the-burger .burger-container .left-side-container .inner-left-side-container h2 {
     font-size: 16px;
     text-transform: uppercase;
-    color: brown;
+    color: #a47d5e;
 }
 
 section.art-of-the-burger .burger-container .left-side-container .chef-div {
@@ -217,7 +219,7 @@ section.art-of-the-burger .burger-container .left-side-container .chef-quote p {
     align-self: center;
     font-size: 36px;
     font-family: 'Tangerine', cursive;
-    color: brown;
+    color: #a47d5e;
 }
 
 section.art-of-the-burger .burger-container .left-side-container .chef-quote i.quote-1 {
@@ -301,7 +303,7 @@ section.tasty-fries {
     font-size: 16px;
     text-transform: uppercase;
     margin-top: 5px;
-    color: brown;
+    color: #a47d5e;
 }
 
 .tasty-fries .middle-section .fries-right-side p {
@@ -326,7 +328,7 @@ section.tasty-fries {
 }
 
 .tasty-fries .middle-section .tasty-floating-div p:first-child {
-    color: brown;
+    color: #a47d5e;
     font-weight: bold;
     font-size: 20px;
 }
@@ -345,14 +347,15 @@ section.tasty-fries {
     position: relative;
     background-image: url('../images/breakfast-bg.png');
     background-size: 100% 100%;
-    z-index: -1;
+    z-index: 0;
 }
 
 .breakfast .breakfast-inner {
     width: 80%;
     margin: 0 auto;
     display: flex;
-    padding: 75px 0px;
+    padding: 85px 0px;
+    padding-left: 90px;
 }
 
 .breakfast .breakfast-inner .breakfast-left {
@@ -366,33 +369,37 @@ section.tasty-fries {
     text-align: center;
 }
 .breakfast .breakfast-inner .breakfast-left header {
-    margin-bottom: 40px;
+    margin-bottom: 75px;
 }
 
 .breakfast .breakfast-inner .breakfast-left header h1 {
     color: white;
     font-size: 64px;
+    letter-spacing: 2px;
 }
 
 .breakfast .breakfast-inner .breakfast-left header p {
     font-size: 16px;
     text-transform: uppercase;
-    color: brown;
+    color: #c8a593;
     font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .breakfast .breakfast-inner .breakfast-left .menu-item {
-    margin-bottom: 40px;    
+    margin-bottom: 40px;
 }
 
 .breakfast .breakfast-inner .breakfast-left .menu-item h2 {
     color: white;
     font-size: 32px;
     margin-bottom: 10px;
+    letter-spacing: 2px;
 }
 
 .breakfast .breakfast-inner .breakfast-left .menu-item p:nth-child(2) {
-    color: gray;
+    color: #9c999b;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
@@ -403,10 +410,47 @@ section.tasty-fries {
     font-family: 'Roboto', sans-serif;
 }
 
+.breakfast .breakfast-inner .breakfast-right {
+    
+}
+
 .breakfast .breakfast-inner .breakfast-right .breakfast-right-inner {
-    width: 55%;
+    width: 80%;
     margin: 0 auto;
-    background-image: url('../images/paper-bg.jpg');
-    background-repeat: repeat;
+    background-image: url('../images/right-side-menu.png');
+    background-size: 100% 100%;
     height: 100%;
+    margin-left: 160px;
+}
+
+.breakfast .breakfast-inner .breakfast-right .breakfast-right-inner .breakfast-right-read {
+    color: #56534c;
+    padding-top: 200px;
+}
+
+.breakfast .breakfast-inner .breakfast-right .breakfast-right-inner .breakfast-right-read h1 {
+    font-size: 44px;
+    margin-bottom: 60px;
+}
+
+.breakfast .breakfast-inner .breakfast-right .breakfast-right-inner .breakfast-right-read p {
+    width: 75%;
+    margin: 0 auto;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin-bottom: 90px;
+}
+
+.breakfast .breakfast-inner .breakfast-right .breakfast-right-inner .breakfast-right-read a {
+    color: #a47d5e;
+    border: 1px solid #9e9c93;
+    padding: 15px 80px;
+    transition: all .25s ease-in-out;
+    font-weight: bold;
+}
+
+.breakfast .breakfast-inner .breakfast-right .breakfast-right-inner .breakfast-right-read a:hover {
+    color: white;
+    background-color: #9e9c93;
 }
