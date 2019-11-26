@@ -347,7 +347,8 @@ section.tasty-fries {
     position: relative;
     background-image: url('../images/breakfast-bg.png');
     background-size: 100% 100%;
-    z-index: 0;
+    z-index: 1;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
 }
 
 .breakfast .breakfast-inner {
@@ -410,10 +411,6 @@ section.tasty-fries {
     font-family: 'Roboto', sans-serif;
 }
 
-.breakfast .breakfast-inner .breakfast-right {
-    
-}
-
 .breakfast .breakfast-inner .breakfast-right .breakfast-right-inner {
     width: 80%;
     margin: 0 auto;
@@ -453,4 +450,66 @@ section.tasty-fries {
 .breakfast .breakfast-inner .breakfast-right .breakfast-right-inner .breakfast-right-read a:hover {
     color: white;
     background-color: #9e9c93;
+}
+
+.bottom-section {
+    position: relative;
+    background-color: #f3f1e9;
+}
+
+.bottom-section header {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.bottom-section header h1 {
+    font-size: 48px;
+}
+
+.bottom-section header h2 {
+    color: #a47d5e;
+}
+
+.bottom-section .bottom-section-middle {
+    display: flex;
+}
+
+.bottom-section .bottom-section-middle .bottom-section-left, .bottom-section .bottom-section-middle .bottom-section-right {
+    width: 50%;
+}
+
+.bottom-section .bottom-section-middle .bottom-section-left {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bottom-section .bottom-section-middle .bottom-section-left .bottom-section-left-ingredients {
+    margin-bottom: 50px;
+}
+
+.bottom-section .bottom-section-middle .bottom-section-left .bottom-section-left-ingredients img {
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    margin-bottom: 20px;
+}
+
+.bottom-section .bottom-section-middle .bottom-section-left .bottom-section-left-ingredients h3 {
+    margin-bottom: 20px;
+    color: #a47d5e;
+}
+
+.bottom-section .bottom-section-middle .bottom-section-left .bottom-section-left-ingredients p {
+    margin-bottom: 20px;
+}
+
+.bottom-section .bottom-section-middle .bottom-section-right {
+    margin: auto 0;
+}
+
+.bottom-section .bottom-section-middle .bottom-section-right img {
+    margin-left: -200px;
+    box-shadow: 5px 2px 20px rgba(0,0,0,.5);
 }
