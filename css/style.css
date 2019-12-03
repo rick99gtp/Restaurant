@@ -82,7 +82,7 @@ section.hero-section header nav ul li a:before {
  }
 
  .fa:hover {
-     transform: scale(1.4);
+     transform: scale(1.4) rotate(10deg);
  }
 
 a {
