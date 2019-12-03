@@ -71,7 +71,7 @@ section.hero-section header nav ul li a:before {
     transform: scaleX(1);
   }
 
-.fa {
+.fab {
     padding: 20px;
     font-size: 30px;
     width: 60px;
@@ -81,7 +81,7 @@ section.hero-section header nav ul li a:before {
     transition: all .2s ease-in-out;
  }
 
- .fa:hover {
+ .fab:hover {
      transform: scale(1.4) rotate(10deg);
  }
 
