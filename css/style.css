@@ -89,6 +89,10 @@ section.hero-section .center-hero-text p {
     font-family: 'Roboto', sans-serif;
 }
 
+section.hero-section .center-hero-text a {
+    color: white;
+}
+
 section.hero-section .center-hero-text .hero-menu-button {
     padding: 2% 12%;
     font-size: 20px;
