@@ -41,6 +41,9 @@ section.hero-section header nav ul {
 section.hero-section header nav ul li {
     letter-spacing: 8px;
     padding: 0px 15px;
+}
+
+section.hero-section header nav ul li a {
     color: white;
 }
 
@@ -572,8 +575,9 @@ section.tasty-fries {
 }
 
 .bottom-section-bottom .inside-bottom-section ul li {
-    font-size: 24px;
+    font-size: 12px;
     margin-right: 20px;
+    letter-spacing: 2px;
 }
 
 .bottom-section-bottom .inside-bottom-section ul li:nth-child(odd) {
