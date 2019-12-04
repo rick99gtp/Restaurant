@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.body-modal {
+    height: 100vh;
+    overflow-y: hidden;
+    padding-right: 15px;
+}
+
 .upper {
     text-transform: uppercase;
 }
@@ -418,8 +424,6 @@ section.tasty-fries {
     justify-content: space-between;
 }
 
-
-
 .breakfast {
     position: relative;
     background-image: url('../images/breakfast-bg.png');
@@ -516,7 +520,7 @@ section.tasty-fries {
     margin-bottom: 90px;
 }
 
-.breakfast .breakfast-inner .breakfast-right .breakfast-right-inner .breakfast-right-read a {
+.breakfast .breakfast-inner .breakfast-right .breakfast-right-inner .breakfast-right-read a, .read-modal .inner-modal a {
     color: #a47d5e;
     border: 1px solid #9e9c93;
     padding: 15px 80px;
@@ -524,7 +528,7 @@ section.tasty-fries {
     font-weight: bold;
 }
 
-.breakfast .breakfast-inner .breakfast-right .breakfast-right-inner .breakfast-right-read a:hover {
+.breakfast .breakfast-inner .breakfast-right .breakfast-right-inner .breakfast-right-read a:hover, .read-modal .inner-modal a:hover {
     color: white;
     background-color: #9e9c93;
 }
@@ -633,4 +637,44 @@ section.tasty-fries {
 .bottom-section-bottom .inside-bottom-section .bottom-logo {
     margin: 0 30px;
     color: #7e7c75;
+}
+
+.read-modal {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.2);
+    z-index: 99;
+}
+
+.inner-modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 30%;
+    border: 2px solid #fff;
+    background-color: #ccc;
+    z-index: 99;
+    padding: 2em;
+    box-shadow: 0 0px 25px rgba(0,0,0,.5);
+}
+
+.inner-modal h1 {
+    padding: 20px;
+    font-size: 48px;
+}
+
+.inner-modal p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 1em;
+}
+
+.inner-modal a {
+    background-color: transparent;
 }
