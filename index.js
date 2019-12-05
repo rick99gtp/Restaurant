@@ -16,7 +16,7 @@ let modalBtn = document.getElementById('modal-close');
 
 modalBtn.addEventListener('click', function(e) {
     e.preventDefault();
-    
+
     modal.style.display = 'none';
 });
 

@@ -338,59 +338,45 @@ section.tasty-fries {
 }
 
 .tasty-fries .middle-section {
-    width: 60vw;
-    height: 70vh;
     display: flex;
-    margin: 0 auto;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 25px;
-}
-
-.tasty-fries .middle-section img {
+    margin: 10em 0;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .tasty-fries .middle-section .fries-right-side {
-    position: relative;
     background-image: url('../images/barn-bg.jpg');
-    background-size: 543px 511px;
     background-repeat: no-repeat;
-    width: 543px;
-    height: 511px;
-    padding-left: 4%;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    background-size: 100% 100%;
 }
 
 .tasty-fries .middle-section .fries-right-side h2 {
     font-size: 48px;
-    margin-top: 15%;
 }
 
 .tasty-fries .middle-section .fries-right-side h3 {
     font-size: 16px;
     text-transform: uppercase;
-    margin-top: 5px;
     color: #a47d5e;
 }
 
 .tasty-fries .middle-section .fries-right-side p {
     line-height: 1.75;
     letter-spacing: 1px;
-    margin-top: 13%;
     margin-right: 10%;
 }
 
 .tasty-fries .middle-section .tasty-floating-div {
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
     width: 200px;
     height: 200px;
     background-color: white;
-    margin-left: -100px;
-    margin-top: -400px;
+    left: -100px;
+    top: -100px;
+    /* margin-left: -100px;
+    margin-top: -400px; */
     text-align: center;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), -15px 15px 30px rgba(0,0,0,0.22);
 }
@@ -412,16 +398,18 @@ section.tasty-fries {
 }
 
 .carousel-container {
+    position: relative;
     margin-top: 150px;
 }
 
 .carousel-container .carousel-nav {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .breakfast {
@@ -648,6 +636,7 @@ section.tasty-fries {
     left: 0;
     background-color: rgba(0,0,0,.2);
     z-index: 99;
+    animation: modal-anim .5s forwards;
 }
 
 .inner-modal {
@@ -662,6 +651,7 @@ section.tasty-fries {
     z-index: 99;
     padding: 2em;
     box-shadow: 0 0px 25px rgba(0,0,0,.5);
+    border-radius: 5px;
 }
 
 .inner-modal h1 {
@@ -672,9 +662,32 @@ section.tasty-fries {
 .inner-modal p {
     font-size: 24px;
     line-height: 1.5;
-    margin: 1em;
+    /* margin: 1em; */
 }
 
-.inner-modal a {
-    background-color: transparent;
+#modal-close {
+    display: block;
+    width: 50%;
+    margin: 2em auto 1em;
 }
+
+@keyframes modal-anim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes modal-anim-exit {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
