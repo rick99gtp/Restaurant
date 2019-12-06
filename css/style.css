@@ -332,24 +332,27 @@ section.tasty-fries {
     background-size: 100% 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,.25);
     z-index: 5;
 }
 
 .tasty-fries .middle-section {
     display: flex;
-    margin: 10em 0;
+    margin: 12em 0;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    width: 60%;
+    margin-right: 130px;
 }
 
 .tasty-fries .middle-section .fries-right-side {
+    position: relative;
     background-image: url('../images/barn-bg.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    padding: 30px 100px;
 }
 
 .tasty-fries .middle-section .fries-right-side h2 {
+    margin-top: 50px;
     font-size: 48px;
 }
 
@@ -360,9 +363,9 @@ section.tasty-fries {
 }
 
 .tasty-fries .middle-section .fries-right-side p {
+    margin-top: 50px;
+    padding-right: 30px;
     line-height: 1.75;
-    letter-spacing: 1px;
-    margin-right: 10%;
 }
 
 .tasty-fries .middle-section .tasty-floating-div {
@@ -375,8 +378,8 @@ section.tasty-fries {
     background-color: white;
     left: -100px;
     top: -100px;
-    /* margin-left: -100px;
-    margin-top: -400px; */
+    margin-left: -100px;
+    margin-top: -400px;
     text-align: center;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), -15px 15px 30px rgba(0,0,0,0.22);
 }
@@ -395,11 +398,13 @@ section.tasty-fries {
 
 .tasty-fries .middle-section .tasty-floating-div p:nth-child(3) {
     font-size: 24px;
-}
+} */
 
 .carousel-container {
-    position: relative;
-    margin-top: 150px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .carousel-container .carousel-nav {

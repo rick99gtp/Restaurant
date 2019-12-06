@@ -1,4 +1,4 @@
-let readBtn = document.querySelector('.breakfast-right-read');
+let readBtn = document.querySelector('.breakfast-button');
 let modal = document.querySelector('.read-modal');
 
 readBtn.addEventListener('click', function(e) {
