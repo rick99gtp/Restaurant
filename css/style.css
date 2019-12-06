@@ -398,23 +398,28 @@ section.tasty-fries {
 
 .tasty-fries .middle-section .tasty-floating-div p:nth-child(3) {
     font-size: 24px;
-} */
+}
 
 .carousel-container {
     width: 100%;
     position: absolute;
     left: 0;
     bottom: 0;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.carousel-container .carousel-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.carousel-container-inner {
+    width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+
+.carousel-container .carousel-container-inner img {
+    border-radius: 50%;
 }
 
 .breakfast {
