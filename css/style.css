@@ -413,7 +413,15 @@ section.art-of-the-burger .burger-container .right-side-container .bottom-right-
     padding: 0px 30px;
 }
 
-#prev {
+.black {
+    color: black;
+}
+
+.gray {
+    color: gray;
+}
+
+.inactive-carousel-controls {
     color: gray;
 }
 
