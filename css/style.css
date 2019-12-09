@@ -325,50 +325,104 @@ section.art-of-the-burger .burger-container .right-side-container .bottom-right-
     grid-column: 2;
 }
 
-section.tasty-fries {
+/* TASTY FRIES SECTION */
+.tasty-fries {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url("../images/white-table.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    display: flex;
-    justify-content: center;
-    z-index: 5;
 }
 
-.tasty-fries .middle-section {
-    display: flex;
-    margin: 12em 0;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    width: 60%;
-    margin-right: 130px;
-}
-
-.tasty-fries .middle-section .fries-right-side {
+.centered {
     position: relative;
+    display: flex;
+    width: 60%;
+    margin: 12em 0 10em 0;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.centered img {
+    display: block;
+    min-width: 422px;
+}
+
+.right-side {
+    position: relative;
+    width: 100%;
+    padding: 40px;
     background-image: url('../images/barn-bg.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    padding: 30px 100px;
 }
 
-.tasty-fries .middle-section .fries-right-side h2 {
-    margin-top: 50px;
+.right-side h2 {
     font-size: 48px;
 }
 
-.tasty-fries .middle-section .fries-right-side h3 {
+.right-side h3 {
     font-size: 16px;
     text-transform: uppercase;
     color: #a47d5e;
 }
 
-.tasty-fries .middle-section .fries-right-side p {
-    margin-top: 50px;
-    padding-right: 30px;
+.right-side p {
+    width: 75%;
+    margin: 75px auto;
     line-height: 1.75;
+    letter-spacing: 1px;
 }
 
-.tasty-fries .middle-section .tasty-floating-div {
+/* CAROUSEL - TASTY SECTION */
+.carousel-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-container .carousel-inner {
+    position: relative;
+    display: flex;
+    width: 300%;
+    transition: all .5s ease-in-out;
+}
+
+.carousel-container .carousel-inner .img-container {
+    flex: 33.33%;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.carousel-container .carousel-inner .img-container img {
+    width: 100%;
+}
+
+.carousel-container .carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+#prev {
+    color: gray;
+}
+
+.active-carousel-controls {
+    color: black;
+}
+
+/* FLOATING DIV - TASTY SECTION */
+.tasty-fries .centered .tasty-floating-div {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -376,55 +430,34 @@ section.tasty-fries {
     width: 200px;
     height: 200px;
     background-color: white;
-    left: -100px;
+    right: -100px;
     top: -100px;
-    margin-left: -100px;
-    margin-top: -400px;
+    margin-left: 0px;
+    margin-top: 0px;
     text-align: center;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), -15px 15px 30px rgba(0,0,0,0.22);
 }
 
-.tasty-fries .middle-section .tasty-floating-div p:first-child {
+.tasty-fries .centered .tasty-floating-div p:first-child {
     color: #a47d5e;
     font-weight: bold;
     font-size: 20px;
 }
 
-.tasty-fries .middle-section .tasty-floating-div p:nth-child(2) {
+.tasty-fries .centered .tasty-floating-div p:nth-child(2) {
     font-size: 80px;
     font-weight: bold;
     color: rgb(235, 226, 144);
 }
 
-.tasty-fries .middle-section .tasty-floating-div p:nth-child(3) {
+.tasty-fries .centered .tasty-floating-div p:nth-child(3) {
     font-size: 24px;
 }
 
-.carousel-container {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel-container-inner {
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.carousel-container .carousel-container-inner img {
-    border-radius: 50%;
-}
-
+/* BREAKFAST SECTION */
 .breakfast {
     position: relative;
-    background-image: url('../images/breakfast-bg.png');
+    background-image: url('../images/breakfast-bg.jpg');
     background-size: 100% 100%;
     z-index: 1;
     box-shadow: 2px 2px 5px rgba(0,0,0,.5);

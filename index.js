@@ -25,3 +25,32 @@ window.onclick = function(e) {
         modal.style.display = 'none';
     }
 };
+
+// get carousel controls
+let prev = document.querySelector('#prev');
+let next = document.querySelector('#next');
+
+// get inner div
+let cInner = document.querySelector('.carousel-container .carousel-inner');
+let innerLeft = 0;
+
+cInner.style.left = 0 + 'px';
+
+// get width of inner div
+let innerWidth = document.querySelector('.carousel-container .carousel-inner').getBoundingClientRect().width / 3;
+let leftMax = innerWidth * -2;
+
+
+prev.addEventListener('click', e => {
+    if(innerLeft > leftMax) {
+        innerLeft -= innerWidth;
+        cInner.style.left = innerLeft + 'px';
+    }
+});
+
+next.addEventListener('click', e => {
+    if(innerLeft < 0) {
+        innerLeft += innerWidth;
+        cInner.style.left = innerLeft + 'px';        
+    }
+});
