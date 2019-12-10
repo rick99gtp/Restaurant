@@ -3,13 +3,8 @@ let modal = document.querySelector('.read-modal');
 
 readBtn.addEventListener('click', function(e) {
     e.preventDefault();
-    // first set body to 100vh
-    // let body = document.querySelector('body');
-    
-    // body.classList.add('body-modal');
 
-    // get modal element
-    modal.style.display = "block";
+    modal.classList.add('show-modal');
 });
 
 let modalBtn = document.getElementById('modal-close');
@@ -17,12 +12,12 @@ let modalBtn = document.getElementById('modal-close');
 modalBtn.addEventListener('click', function(e) {
     e.preventDefault();
 
-    modal.style.display = 'none';
+    modal.classList.remove('show-modal');
 });
 
 window.onclick = function(e) {
     if(e.target == modal) {
-        modal.style.display = 'none';
+        modal.classList.remove('show-modal');
     }
 };
 
