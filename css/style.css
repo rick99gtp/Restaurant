@@ -9,6 +9,11 @@
     font-weight: bold;
 }
 
+body {
+    background-image: url("../images/menu-bg.jpg");
+    background-repeat: repeat;
+}
+
 .body-modal {
     height: 100vh;
     overflow-y: hidden;
@@ -100,7 +105,7 @@ a {
     text-decoration: none;
 }
 
-section.hero-section header .social {
+section.hero-section header .social, section.menu-section header .social {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -735,8 +740,6 @@ section.art-of-the-burger .burger-container .right-side-container .bottom-right-
 
 section.menu-section {
     position: relative;
-    background-image: url("../images/menu-bg.jpg");
-    background-repeat: repeat;
 }
 
 section.menu-section header {
@@ -779,22 +782,23 @@ section.menu-section header nav ul li a:before {
     transition: all 0.3s ease-in-out 0s;
   }
 
-  section.menu-section header nav ul li a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-  }
+    section.menu-section header nav ul li a:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
 
-  .menu-details {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px;
-  }
+    .menu-details {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        margin: 30px auto;
+    }
 
   .menu-images {
-      margin: 10px;
-      width: 50%;
+      width: 43%;
       background-image: url('../images/paper-bg.jpg');
+      box-shadow: 0 8px 6px -6px black;
   }
 
   .menu-images .menu-images-outer img {
@@ -805,15 +809,62 @@ section.menu-section header nav ul li a:before {
 }
 
   .menu-images p {
-      font-size: 42px;
+      font-size: 24px;
       font-weight: bold;
       text-align: center;
   }
 
+  .menu-images p:nth-child(6) {
+      margin-bottom: 5%;
+  }
+
   .menu-list {
-      margin: 10px;
-      width: 55%;
+      width: 54%;
       background-image: url('../images/paper-bg.jpg');
+      box-shadow: 0 8px 6px -6px black;
+  }
+
+  .menu-list h2 {
+      font-size: 32px;
+  }
+
+    .menu-list .menu-section-divider h3 {
+        font-size: 24px;
+    }
+
+    .menu-food-item {
+        margin: 20px 30px;
+    }
+
+  .menu-food-item h4, .menu-food-item-price {
+      font-size: 48px;
+      letter-spacing: 1px;
+      color: #A12E14;
+      font-family: 'Tangerine', cursive;
+  }
+
+  .menu-food-item-div {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      background-color: rgba(203,173,137,.2);
+      border-radius: 10px;
+      padding: 10px;
+      border: 2px solid rgba(203,173,137,.4);
+  }
+
+  .menu-food-item-desc {
+      line-height: 1.5em;
+      display: block;
+      width: 65%;
+      margin: 10px 0px 0px 20px;
+      color: rgba(0,0,0,.7);
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 1px;
+  }
+
+  .menu-food-item-price {
+      font-weight: bold;
   }
 
 /* MEDIA QUERIES */
