@@ -9,6 +9,11 @@
     font-weight: bold;
 }
 
+.new-orange {
+    color: #A12E14;
+    font-weight: bold;
+}
+
 body {
     background-image: url("../images/menu-bg.jpg");
     background-repeat: repeat;
@@ -796,6 +801,9 @@ section.menu-section header nav ul li a:before {
     }
 
   .menu-images {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
       width: 43%;
       background-image: url('../images/paper-bg.jpg');
       box-shadow: 0 8px 6px -6px black;
@@ -806,6 +814,7 @@ section.menu-section header nav ul li a:before {
     width: 90%;
     margin: 5% auto;
     border-radius: 10px;
+    box-shadow: 1px 1px 5px 3px rgba(0,0,0,.3);
 }
 
   .menu-images p {
@@ -824,12 +833,23 @@ section.menu-section header nav ul li a:before {
       box-shadow: 0 8px 6px -6px black;
   }
 
+  .menu-list hr {
+      width: 90%;
+      margin: 0 auto;
+  }
+
   .menu-list h2 {
       font-size: 32px;
+      margin-left: 30px;
+      padding: 10px;
   }
 
     .menu-list .menu-section-divider h3 {
         font-size: 24px;
+    }
+
+    .menu-list .menu-section-divider img {
+        margin: 0 auto;
     }
 
     .menu-food-item {
@@ -866,6 +886,45 @@ section.menu-section header nav ul li a:before {
   .menu-food-item-price {
       font-weight: bold;
   }
+
+  .menu-list hr {
+    margin: 30px auto 0px;
+    overflow: visible;
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+  }
+
+    .menu-list hr#burger:after {
+        content: "BURGERS";
+        display: inline-block;
+        position: relative;
+        top: -0.7em;
+        font-size: 1.5em;
+        padding: 0 0.25em;
+        background-image: url('../images/paper-bg.jpg');
+    }
+    .menu-list hr#fries:after {
+        content: "FRIES";
+        display: inline-block;
+        position: relative;
+        top: -0.7em;
+        font-size: 1.5em;
+        padding: 0 0.25em;
+        background-image: url('../images/paper-bg.jpg');
+    }
+
+    .menu-list hr#drinks:after {
+        content: "DRINKS";
+        display: inline-block;
+        position: relative;
+        top: -0.7em;
+        font-size: 1.5em;
+        padding: 0 0.25em;
+        background-image: url('../images/paper-bg.jpg');
+    }
 
 /* MEDIA QUERIES */
 /* ----------- Non-Retina Screens ----------- */
