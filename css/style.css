@@ -873,15 +873,16 @@ section.menu-section header nav ul li a:before {
       border: 2px solid rgba(203,173,137,.4);
   }
 
-  .menu-food-item-desc {
-      line-height: 1.5em;
-      display: block;
-      width: 65%;
-      margin: 10px 0px 0px 20px;
-      color: rgba(0,0,0,.7);
-      font-family: 'Roboto', sans-serif;
-      letter-spacing: 1px;
-  }
+    .menu-food-item-desc {
+        padding-top: 10px;
+        line-height: 1.5em;
+        display: block;
+        width: 65%;
+        margin: 10px 0px 0px 20px;
+        color: rgba(0,0,0,.7);
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 1px;
+    }
 
   .menu-food-item-price {
       font-weight: bold;
@@ -992,6 +993,23 @@ section.menu-section header nav ul li a:before {
 
     section.art-of-the-burger .burger-container .right-side-container .grid-container h2 {
         font-size: 5vw;
+    }
+
+    .menu-images {
+        display: none;
+    }
+
+    .menu-details {
+        width: 100%;
+    }
+
+    .menu-list {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .menu-food-item-desc {
+        width: 100%;
     }
 
 }
