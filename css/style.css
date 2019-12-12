@@ -285,7 +285,6 @@ section.art-of-the-burger .burger-container .left-side-container .chef-quote i.q
 }
 
 section.art-of-the-burger .burger-container .right-side-container {
-    display: block;
     margin: auto 0;
 }
 
@@ -967,6 +966,32 @@ section.menu-section header nav ul li a:before {
 
     section.art-of-the-burger .burger-container .left-side-container {
         width: 100%;
+    }
+
+    section.art-of-the-burger .burger-container .right-side-container .grid-container {
+        position: relative;
+        display: grid;
+        grid-template-columns: auto;
+        padding-bottom: 50px;
+    }
+
+    .grid-container img {
+        width: 100%;
+        height: 100%;
+    }
+
+    section.art-of-the-burger .burger-container .right-side-container .grid-container .abs-gear-image {
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: .95; */
+        width: 50%;
+        height: 50%;
+    }
+
+    section.art-of-the-burger .burger-container .right-side-container .grid-container h2 {
+        font-size: 5vw;
     }
 
 }
