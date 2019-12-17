@@ -1012,4 +1012,192 @@ section.menu-section header nav ul li a:before {
         width: 100%;
     }
 
+    /* TASTY FRIES */
+    .centered {
+        position: relative;
+        display: block;
+        width: 100%;
+        margin: 30px;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    .centered img {
+        display: block;
+        min-width: 0px;
+    }
+
+    .centered img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .right-side {
+        position: relative;
+        width: 100%;
+        padding: 40px;
+        /* margin: 0 auto; */
+        background-image: url('../images/barn-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .right-side h2 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .right-side h3 {
+        margin-top: 15px;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #a47d5e;
+        text-align: center;
+    }
+
+    .right-side p {
+        width: 75%;
+        margin: 20px auto 0px;
+        line-height: 1.75;
+        letter-spacing: 1px;
+    }
+
+    /* CAROUSEL - TASTY SECTION */
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .carousel-container .carousel-inner {
+        position: relative;
+        display: flex;
+        width: 300%;
+        transition: all .5s ease-in-out;
+    }
+
+    .carousel-container .carousel-inner .img-container {
+        flex: 33.33%;
+        margin: 0 auto;
+        padding: 25px;
+    }
+
+    .carousel-container .carousel-inner .img-container img {
+        width: 100%;
+    }
+
+    .carousel-container .carousel-controls {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 30px;
+    }
+
+    .black {
+        color: black;
+    }
+
+    .gray {
+        color: gray;
+    }
+
+    .inactive-carousel-controls {
+        color: gray;
+    }
+
+    .active-carousel-controls {
+        color: black;
+    }
+
+    /* FLOATING DIV - TASTY SECTION */
+    .tasty-fries .centered .tasty-floating-div {
+        right: -15px;
+        top: -15px;
+    }
+
+    /* BREAKFAST SECTION */
+
+    .breakfast .breakfast-inner {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+        padding: 35px 0px;
+    }
+
+    .breakfast .breakfast-inner .breakfast-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgba(0,0,0,.4);
+        border-radius: 10px;
+    }
+
+    .breakfast .breakfast-inner .breakfast-left,  .breakfast .breakfast-inner .breakfast-right {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .breakfast .breakfast-inner .breakfast-left header {
+        margin-bottom: 20px;
+    }
+
+    .breakfast .breakfast-inner .breakfast-left header h1 {
+        color: white;
+        font-size: 64px;
+        letter-spacing: 2px;
+        margin-top: 20px;
+    }
+
+    .breakfast .breakfast-inner .breakfast-right .breakfast-right-inner {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .breakfast .breakfast-inner .breakfast-right .breakfast-right-inner .breakfast-right-read {
+        color: #56534c;
+        padding-top: 130px;
+        padding-bottom: 50px;
+    }
+
+    .breakfast .breakfast-inner .breakfast-right .breakfast-right-inner .breakfast-right-read h1 {
+        font-size: 44px;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .breakfast .breakfast-inner .breakfast-right .breakfast-right-inner .breakfast-right-read p {
+        margin: 45px auto;
+    }
+
+    .breakfast-button, .read-modal .inner-modal a {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .breakfast .breakfast-inner .breakfast-right .breakfast-right-inner .breakfast-right-read a:hover, .read-modal .inner-modal a:hover {
+        color: white;
+        background-color: #9e9c93;
+    }
+
+    .read-modal {
+        top: 100%;
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    .show-modal {
+        width: 250%;
+        top: 0%;
+        left: -75%;
+        opacity: 1;
+        transform: scale(1);
+    }
+
 }
