@@ -1200,4 +1200,90 @@ section.menu-section header nav ul li a:before {
         transform: scale(1);
     }
 
+    /* BOTTOM SECTION */
+
+    .bottom-section {
+        position: relative;
+        background-color: #f3f1e9;
+    }
+    
+    .bottom-section header {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+    
+    .bottom-section header h1 {
+        font-size: 48px;
+    }
+    
+    .bottom-section header h2 {
+        font-size: 1.25em;
+        margin-top: 10px;
+        color: #a47d5e;
+    }
+    
+    .bottom-section .bottom-section-middle {
+        flex-direction: column-reverse;
+    }
+    
+    .bottom-section .bottom-section-middle .bottom-section-left, .bottom-section .bottom-section-middle .bottom-section-right {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .bottom-section .bottom-section-middle .bottom-section-left {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+        
+    .bottom-section .bottom-section-middle .bottom-section-right img {
+        margin-left: 0px;
+        width: 100%;
+    }
+    
+    .bottom-section-bottom {
+        display: none;
+        padding: 75px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .bottom-section-bottom .inside-bottom-section {
+        margin: 0 auto;
+        display: none;
+        padding: 10px;
+    }
+    
+    .bottom-section-bottom .inside-bottom-section ul { 
+        display: none;
+        align-items: center;
+        list-style-type: none;
+    }
+    
+    .bottom-section-bottom .inside-bottom-section ul li {
+        font-size: 12px;
+        margin-right: 20px;
+        letter-spacing: 2px;
+    }
+    
+    .bottom-section-bottom .inside-bottom-section ul li:nth-child(odd) {
+        border-top: 1px solid rgba(0,0,0,0.2);
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+        padding: 15px 25px;
+    }
+    
+    .bottom-section-bottom .inside-bottom-section ul li a {
+        color: black;
+        text-transform: uppercase;
+        padding: 20px;
+    }
+    
+    .bottom-section-bottom .inside-bottom-section .bottom-logo {
+        margin: 0 30px;
+        color: #7e7c75;
+    }
+
 }
