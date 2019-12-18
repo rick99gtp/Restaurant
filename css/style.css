@@ -857,7 +857,7 @@ section.menu-section header nav ul li a:before {
     }
 
   .menu-food-item h4, .menu-food-item-price {
-      font-size: 48px;
+      font-size: 6vw;
       letter-spacing: 1px;
       color: #A12E14;
       font-family: 'Tangerine', cursive;
@@ -874,6 +874,7 @@ section.menu-section header nav ul li a:before {
   }
 
     .menu-food-item-desc {
+        font-size: 3vw;
         padding-top: 10px;
         line-height: 1.5em;
         display: block;
@@ -943,13 +944,14 @@ section.menu-section header nav ul li a:before {
     }
 
     section.hero-section .center-hero-text {
-        display: block;
-        width: 80%;
+        width: 100%;
+        margin-top: 30px;
     }
 
     section.hero-section .center-hero-text p {
-        width: 80%;
-        margin: 0 auto;
+        width: 100%;
+        margin: 70px auto;
+        font-size: 3vw;
     }
 
     section.hero-section .center-hero-text a {
@@ -957,8 +959,8 @@ section.menu-section header nav ul li a:before {
     }
 
     section.hero-section .center-hero-text .hero-menu-button {
-        padding: 30px 100px;
-        margin-top: 50px;
+        padding: 15px 100px;
+        margin-top: 0px;
     }
 
     section.art-of-the-burger .burger-container {
@@ -982,11 +984,6 @@ section.menu-section header nav ul li a:before {
     }
 
     section.art-of-the-burger .burger-container .right-side-container .grid-container .abs-gear-image {
-        /* position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: .95; */
         width: 50%;
         height: 50%;
     }
@@ -1211,11 +1208,11 @@ section.menu-section header nav ul li a:before {
         width: 50%;
         margin: 0 auto;
         text-align: center;
-        padding-top: 100px;
+        padding-top: 50px;
     }
     
     .bottom-section header h1 {
-        font-size: 48px;
+        font-size: 8vw;
     }
     
     .bottom-section header h2 {
@@ -1285,5 +1282,35 @@ section.menu-section header nav ul li a:before {
         margin: 0 30px;
         color: #7e7c75;
     }
+
+    section.hero-section .center-hero-text h1 {
+        font-size: 10vw;
+        margin: 0 auto;
+    }
+
+    .fa-facebook-f, .fa-twitter, .fa-instagram {
+        font-size: 20px;
+    }
+
+.bottom-section {
+    width: 100%;
+}
+
+.bottom-section header {
+    width: 100%;
+}
+
+.bottom-section .bottom-section-middle .bottom-section-right img {
+    height: auto;
+    box-shadow: 5px 2px 20px rgba(0,0,0,.5);
+}
+
+.menu-food-item-desc {
+    margin: 0;
+}
+
+#modal-close {
+    width: 100%;
+}
 
 }
