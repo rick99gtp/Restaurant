@@ -571,7 +571,7 @@ section.art-of-the-burger .burger-container .right-side-container .bottom-right-
 }
 
 .breakfast .breakfast-inner .breakfast-left .menu-item p:nth-child(2) {
-    color: #9c999b;
+    color: #c8a593;
     font-size: 18px;
     margin-bottom: 20px;
 }
@@ -972,6 +972,13 @@ section.menu-section header nav ul li a:before {
 /* MEDIA QUERIES */
 /* ----------- Non-Retina Screens ----------- */
 @media screen and (max-width: 768px) {
+
+    section.hero-section {
+        background-image: url("../images/mobile-hero-image.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
     header {
         flex-direction: column;
     }
