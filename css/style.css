@@ -34,6 +34,7 @@ section.hero-section {
 }
 
 section.hero-section header {
+    position: relative;
     display: flex;
     background-color: rgba(0, 0, 0, 0.25);
     justify-content: space-around;
@@ -81,21 +82,57 @@ section.hero-section header nav ul li a:before {
     transition: all 0.3s ease-in-out 0s;
   }
 
-  section.hero-section header nav ul li a:hover:before {
+    section.hero-section header nav ul li a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
-  }
+    }
 
-.fab {
-    padding: 20px;
-    font-size: 25px;
-    width: 60px;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    transition: all .2s ease-in-out;
- }
+    .hamburger {
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        position: absolute;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .hamburger-line {
+        height: 4px;
+        background-color: #fff;
+        /* border-bottom: 4px solid #fff; */
+        transition: all .4s ease-in-out;
+        transform-origin: bottom right;
+        opacity: 1;
+    }
+
+    .firstLine {
+        background-color: red;
+    }
+
+    .animLineOne {
+        transform: rotate(-45deg) translateX(2px);
+    }
+
+    .animLineTwo {
+        opacity: 0;
+    }
+
+    .animLineThree {
+        transform: rotate(45deg);
+    }
+
+    .fab {
+        padding: 20px;
+        font-size: 25px;
+        width: 60px;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        transition: all .2s ease-in-out;
+    }
 
  .fab:hover {
      transform: scale(1.4) rotate(10deg);
@@ -939,8 +976,12 @@ section.menu-section header nav ul li a:before {
         margin-bottom: -20px;
     }
 
-    nav {
+    header nav {
         display: none;
+    }
+
+    .hamburger {
+        display: block;
     }
 
     section.hero-section .center-hero-text {

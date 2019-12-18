@@ -72,3 +72,15 @@ next.addEventListener('click', e => {
         }
     }
 });
+
+let hamburger = document.querySelector('.hamburger');
+
+hamburger.addEventListener('click', e => {
+    let lineOne = document.querySelector('#firstLine');
+    let lineTwo = document.querySelector('#secondLine');
+    let lineThree = document.querySelector('#lastLine');
+
+    lineOne.classList.toggle('animLineOne');
+    lineTwo.classList.toggle('animLineTwo');
+    lineThree.classList.toggle('animLineThree');
+});
