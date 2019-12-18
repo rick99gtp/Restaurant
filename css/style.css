@@ -461,6 +461,10 @@ section.art-of-the-burger .burger-container .right-side-container .bottom-right-
     padding: 0px 30px;
 }
 
+#prev, #next {
+    font-size: 3vw;
+}
+
 .black {
     color: black;
 }
@@ -894,7 +898,7 @@ section.menu-section header nav ul li a:before {
     }
 
   .menu-food-item h4, .menu-food-item-price {
-      font-size: 6vw;
+      font-size: 48px;
       letter-spacing: 1px;
       color: #A12E14;
       font-family: 'Tangerine', cursive;
@@ -911,7 +915,7 @@ section.menu-section header nav ul li a:before {
   }
 
     .menu-food-item-desc {
-        font-size: 3vw;
+        font-size: 16px;
         padding-top: 10px;
         line-height: 1.5em;
         display: block;
@@ -982,6 +986,7 @@ section.menu-section header nav ul li a:before {
 
     .hamburger {
         display: flex;
+        right: 25px;
     }
 
     section.hero-section .center-hero-text {
@@ -992,7 +997,7 @@ section.menu-section header nav ul li a:before {
     section.hero-section .center-hero-text p {
         width: 80%;
         margin: 70px auto;
-        font-size: 3vw;
+        font-size: 5vw;
     }
 
     section.hero-section .center-hero-text a {
@@ -1000,7 +1005,7 @@ section.menu-section header nav ul li a:before {
     }
 
     section.hero-section .center-hero-text .hero-menu-button {
-        padding: 30px 100px;
+        padding: 5vw 10vw;
         margin-top: 0px;
     }
 
@@ -1101,6 +1106,10 @@ section.menu-section header nav ul li a:before {
     }
 
     /* CAROUSEL - TASTY SECTION */
+    #prev, #next {
+        font-size: 7vw;
+    }
+
     .carousel-container {
         position: relative;
         width: 100%;
@@ -1186,7 +1195,7 @@ section.menu-section header nav ul li a:before {
 
     .breakfast .breakfast-inner .breakfast-left header h1 {
         color: white;
-        font-size: 64px;
+        font-size: 8vw;
         letter-spacing: 2px;
         margin-top: 20px;
     }
@@ -1352,6 +1361,23 @@ section.menu-section header nav ul li a:before {
 
 #modal-close {
     width: 100%;
+}
+
+.bottom-section .bottom-section-middle .bottom-section-left {
+    width: 100%;
+}
+
+.bottom-section .bottom-section-middle .bottom-section-left .bottom-section-left-ingredients {
+    display: flex;
+    align-items: center;
+}
+
+.bottom-section .bottom-section-middle .bottom-section-left .bottom-section-left-ingredients h3 {
+    margin: 20px;
+}
+
+.bottom-section .bottom-section-middle .bottom-section-left .bottom-section-left-ingredients p {
+    margin-bottom: 0px;
 }
 
 }
