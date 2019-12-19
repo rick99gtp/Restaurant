@@ -163,6 +163,7 @@ section.hero-section .center-hero-text {
     transform: translate(-50%, -50%);
     color: #E1E4DA;
     text-align: center;
+    animation: fadeInMain ease-in-out .4s forwards;
 }
 
 section.hero-section .center-hero-text h1 {
@@ -191,12 +192,12 @@ section.hero-section .center-hero-text .hero-menu-button {
     border: 2px solid #fff;
     margin: 30px;
     font-weight: bold;
-    transition: all .25s ease-in-out;
     background-color: rgba(0,0,0,.2);
     letter-spacing: 2px;
+    transition: .4s;
 }
 
-section.hero-section .center-hero-text a:hover {
+section.hero-section .center-hero-text .hero-menu-button:hover {
     background-color: white;
     color: #a47d5e;
 }
@@ -541,6 +542,7 @@ section.art-of-the-burger .burger-container .right-side-container .bottom-right-
     width: 50%;
     text-align: center;
 }
+
 .breakfast .breakfast-inner .breakfast-left header {
     margin-bottom: 75px;
 }
@@ -967,6 +969,18 @@ section.menu-section header nav ul li a:before {
         font-size: 1.5em;
         padding: 0 0.25em;
         background-image: url('../images/paper-bg.jpg');
+    }
+
+    @keyframes fadeInMain {
+        0% {
+            top: 45%;
+            opacity: 0;
+        }
+
+        100% {
+            top: 50%;
+            opacity: 1;
+        }
     }
 
 /* MEDIA QUERIES */
