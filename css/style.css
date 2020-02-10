@@ -984,8 +984,7 @@ section.menu-section header nav ul li a:before {
     }
 
 /* MEDIA QUERIES */
-/* ----------- Non-Retina Screens ----------- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
 
     section.hero-section {
         background-image: url("../images/mobile-hero-image.jpg");
@@ -1242,6 +1241,8 @@ section.menu-section header nav ul li a:before {
     .breakfast .breakfast-inner .breakfast-right .breakfast-right-inner .breakfast-right-read p {
         margin: 45px auto;
     }
+
+
 
     .breakfast-button, .read-modal .inner-modal a {
         display: block;
