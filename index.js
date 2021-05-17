@@ -21,58 +21,6 @@ window.onclick = function(e) {
     }
 };
 
-// get carousel controls
-let prev = document.querySelector('#prev');
-let next = document.querySelector('#next');
-
-// get total number of images
-let totalImages = document.querySelectorAll('.carousel-inner .img-container').length;
-
-// get inner div
-let cInner = document.querySelector('.carousel-container .carousel-inner');
-let innerLeft = 0;
-
-cInner.style.left = 0 + 'px';
-
-// get width of inner div
-let innerWidth = document.querySelector('.carousel-container .carousel-inner').getBoundingClientRect().width / totalImages;
-let leftMax = innerWidth * -2;
-
-// previous button
-prev.addEventListener('click', e => {
-    // if able, move contents left
-    if(innerLeft > leftMax) {
-        innerLeft -= innerWidth;
-        cInner.style.left = innerLeft + 'px';
-
-        if(next.classList.contains('inactive-carousel-controls')) {
-            next.classList.remove('inactive-carousel-controls');
-        }
-
-        // check now, if not able to - add class
-        if(innerLeft <= leftMax) {
-            prev.classList.add('inactive-carousel-controls');
-        }
-    }
-});
-
-// next button
-next.addEventListener('click', e => {
-    if(innerLeft < 0) {
-        innerLeft += innerWidth;
-        cInner.style.left = innerLeft + 'px';        
-
-        if(prev.classList.contains('inactive-carousel-controls')) {
-            prev.classList.remove('inactive-carousel-controls');
-        }
-
-        // check now, if not able to - add class
-        if(innerLeft >= 0) {
-            next.classList.add('inactive-carousel-controls');
-        }
-    }
-});
-
 let hamburger = document.querySelector('.hamburger');
 
 hamburger.addEventListener('click', e => {
